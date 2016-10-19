@@ -5,8 +5,15 @@
 	<style>
 		#gridContainer {
 			display: grid;
-			grid-template-columns: repeat(3, 150px);
+			grid-template-columns: 150px 150px 150px;
 			grid-template-rows: auto;
+			border: 1px solid black;
+		}
+		.item {
+			border: 1px solid black;
+			margin: 10px;
+			width: 40px;
+			height: 40px;
 		}
 		.columnFlow {
 			grid-auto-flow: column;
