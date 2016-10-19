@@ -8,10 +8,19 @@
 			grid-template-columns: repeat(3, 150px);
 			grid-template-rows: auto;
 		}
+		.columnFlow {
+			grid-auto-flow: column;
+		}
 	</style>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 	<script>
 		function changeGridFlowDirection() {
+
+			var gridContainer = $('#gridContainer');
 			console.log('Running changeGridFlowDirection()...');
+			console.log(gridContainer.hasClass('columnFlow'));
+			gridContainer.toggleClass('columnFlow');
+
 		}
 	</script>
 </head>
